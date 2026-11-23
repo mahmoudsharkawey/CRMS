@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1100" width="800" height="1100" style="background:#fcfaf5; font-family:'IBM Plex Sans Arabic', Arial, sans-serif;">
+  <!-- Border and texture -->
+  <rect x="30" y="30" width="740" height="1040" fill="#fffdf9" stroke="#334155" stroke-width="2"/>
+  <rect x="36" y="36" width="728" height="1028" fill="none" stroke="#64748b" stroke-width="1" stroke-dasharray="4 2"/>
+
+  <!-- Official Header -->
+  <text x="730" y="70" text-anchor="end" font-size="14" font-weight="bold" fill="#0f2042">جمهورية مصر العربية</text>
+  <text x="730" y="90" text-anchor="end" font-size="13" font-weight="bold" fill="#1e3a8a">وزارة الداخلية</text>
+  <text x="730" y="110" text-anchor="end" font-size="12" fill="#475569">قطاع قوات الأمن - مديرية أمن جنوب سيناء</text>
+  <text x="730" y="128" text-anchor="end" font-size="11" fill="#64748b">إدارة شؤون المجندين - قلم السجلات الطبية</text>
+
+  <!-- Eagle stamp simulation -->
+  <circle cx="400" cy="100" r="38" fill="none" stroke="#1e3a8a" stroke-width="2" stroke-dasharray="3 2" opacity="0.85"/>
+  <circle cx="400" cy="100" r="34" fill="none" stroke="#1e3a8a" stroke-width="1" opacity="0.85"/>
+  <text x="400" y="95" text-anchor="middle" font-size="9" font-weight="bold" fill="#1e3a8a">مديرية أمن جنوب سيناء</text>
+  <text x="400" y="108" text-anchor="middle" font-size="8" fill="#1e3a8a">★ إدارة قوات الأمن ★</text>
+
+  <!-- Left info -->
+  <text x="70" y="70" text-anchor="start" font-size="11" font-family="monospace" fill="#0f2042">كود الملف: REG-18420-EG</text>
+  <text x="70" y="90" text-anchor="start" font-size="11" font-family="monospace" fill="#0f2042">تاريخ القيد: 15 / 01 / 2023</text>
+  <text x="70" y="110" text-anchor="start" font-size="11" fill="#dc2626">درجة السرية: إداري محظور</text>
+
+  <!-- Document Title Banner -->
+  <rect x="150" y="150" width="500" height="40" fill="#0f2042" rx="4"/>
+  <text x="400" y="176" text-anchor="middle" font-size="17" font-weight="bold" fill="#ffffff">سجل الخدمة والفحوصات الطبية الميدانية للمجند</text>
+
+  <!-- Conscript Identification Box -->
+  <rect x="60" y="210" width="680" height="120" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1" rx="4"/>
+  <text x="710" y="240" text-anchor="end" font-size="13" font-weight="bold" fill="#0f2042">اسم المجند: طارق كمال عبد الرحمن حسن</text>
+  <text x="400" y="240" text-anchor="end" font-size="13" font-weight="bold" fill="#0f2042">الرقم القومي: 29903152801452</text>
+  <text x="710" y="270" text-anchor="end" font-size="13" font-weight="bold" fill="#1e3a8a">رقم الشرطة: 2023/18420</text>
+  <text x="400" y="270" text-anchor="end" font-size="13" font-weight="bold" fill="#1e3a8a">رقم الملف الدفتري: م/1402/ط</text>
+  <text x="710" y="300" text-anchor="end" font-size="12" fill="#475569">المؤهل: دبلوم فني صناعي</text>
+  <text x="400" y="300" text-anchor="end" font-size="12" fill="#475569">السلاح والتوزيع: سرية تأمين كمين عيون موسى</text>
+
+  <!-- Medical Section -->
+  <rect x="60" y="350" width="680" height="240" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" rx="4"/>
+  <rect x="60" y="350" width="680" height="30" fill="#e2e8f0"/>
+  <text x="720" y="371" text-anchor="end" font-size="13" font-weight="bold" fill="#0f2042">أولاً: بيان فحص اللياقة الطبية للالتحاق (القومسيون الطبي العسكري)</text>
+
+  <text x="710" y="405" text-anchor="end" font-size="12" fill="#334155">١. فحص القلب والصدر: سليم تماماً وخلو الرئتين من أي أمراض أو شوائب.</text>
+  <text x="710" y="435" text-anchor="end" font-size="12" fill="#334155">٢. حدة الإبصار وقاع العين: 6/6 بالعينين مع توصية طبية بنظارة واقية للخدمات الليلية.</text>
+  <text x="710" y="465" text-anchor="end" font-size="12" fill="#334155">٣. الجراحة العامة والعظام: سلامة المفاصل والعمود الفقري، لائق للخدمة بالمناطق الوعرة.</text>
+  <text x="710" y="495" text-anchor="end" font-size="12" fill="#334155">٤. فصيلة الدم والتحاليل المخبرية: O+ (موجب) • خلو من الأمراض الفيروسية والمعدية.</text>
+  <text x="710" y="525" text-anchor="end" font-size="12" font-weight="bold" fill="#15803d">٥. قرار اللجنة الطبية العسكرية العليا: لائق طبياً للخدمة الشاقة الميدانية - مستوى (أ).</text>
+  <text x="710" y="555" text-anchor="end" font-size="11" fill="#64748b">رئيس القومسيون: عميد طبيب / مدحت عبد العظيم (توقيع معتمد)</text>
+
+  <!-- Administrative & Disciplinary Section -->
+  <rect x="60" y="610" width="680" height="220" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" rx="4"/>
+  <rect x="60" y="610" width="680" height="30" fill="#e2e8f0"/>
+  <text x="720" y="631" text-anchor="end" font-size="13" font-weight="bold" fill="#0f2042">ثانياً: سجل الراحات المرضية والجزاءات المعتمدة</text>
+
+  <text x="710" y="665" text-anchor="end" font-size="12" fill="#334155">• 14/08/2024: راحة مرضية معتمدة 3 أيام لالتواء بمفصل الكاحل الأيمن بمستشفى الطور.</text>
+  <text x="710" y="695" text-anchor="end" font-size="12" fill="#334155">• 10/05/2024: راحة مرضية يومان لالتهاب حاد باللوزتين وصرف العلاج اللازم.</text>
+  <text x="710" y="725" text-anchor="end" font-size="12" fill="#b91c1c">• 20/07/2023: أورنيك جزاء رقم (318/ج) حجز 24 ساعة للتأخر عن طابور التمام الصباحي.</text>
+  <text x="710" y="755" text-anchor="end" font-size="12" fill="#334155">• 05/12/2023: صرف نظارة طبية ميدانية واقية بقرار عيادة الرمد بمستشفى الشرطة بالسويس.</text>
+  <text x="710" y="785" text-anchor="end" font-size="12" font-weight="bold" fill="#0f2042">الحالة الإدارية الحالية: على القوة (بالخدمة المستمرة دون انقطاع).</text>
+
+  <!-- Official Signatures and Seals -->
+  <g transform="translate(60, 860)">
+    <rect width="680" height="150" fill="#fafaf9" stroke="#cbd5e1" stroke-width="1" rx="4"/>
+    
+    <text x="560" y="30" text-anchor="middle" font-size="12" font-weight="bold" fill="#0f2042">مسؤول قلم السجلات</text>
+    <text x="560" y="60" text-anchor="middle" font-size="11" fill="#475569">مساعد شرطة / سعيد الديب</text>
+    <text x="560" y="90" text-anchor="middle" font-size="11" font-style="italic" fill="#94a3b8">[توقيع معتمد]</text>
+
+    <!-- Center Stamp -->
+    <circle cx="340" cy="75" r="45" fill="none" stroke="#1e3a8a" stroke-width="2" stroke-dasharray="4 2"/>
+    <text x="340" y="70" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e3a8a">خاتم السجلات الرسمية</text>
+    <text x="340" y="85" text-anchor="middle" font-size="9" fill="#1e3a8a">قوات أمن جنوب سيناء</text>
+
+    <text x="120" y="30" text-anchor="middle" font-size="12" font-weight="bold" fill="#0f2042">رئيس قسم شؤون المجندين</text>
+    <text x="120" y="60" text-anchor="middle" font-size="11" fill="#475569">مقدم / حسام الجوهري</text>
+    <text x="120" y="90" text-anchor="middle" font-size="11" font-style="italic" fill="#94a3b8">[توقيع معتمد]</text>
+  </g>
+</svg>

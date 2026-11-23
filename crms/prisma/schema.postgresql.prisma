@@ -1,0 +1,79 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Recruit {
+  id                   String          @id @default(cuid())
+  fullName             String
+  nationalId           String          @unique
+  policeNumber         String          @unique
+  fileNumber           String          @unique
+  militaryNumber       String?
+  photo                String?
+  dateOfBirth          DateTime?
+  education            String?
+  serviceInformation   String?
+  administrativeStatus String          @default("على القوة")
+  createdAt            DateTime        @default(now())
+  updatedAt            DateTime        @updatedAt
+
+  records              RecruitRecord[]
+  statusHistory        StatusHistory[]
+  paperDocuments       PaperDocument[]
+
+  @@index([fullName])
+  @@index([policeNumber])
+  @@index([fileNumber])
+}
+
+model RecruitRecord {
+  id          String    @id @default(cuid())
+  recruitId   String
+  type        String
+  date        DateTime
+  entity      String?
+  description String?
+  details     String?
+  startDate   DateTime?
+  endDate     DateTime?
+  duration    String?
+  attachment  String?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  recruit     Recruit   @relation(fields: [recruitId], references: [id], onDelete: Cascade)
+
+  @@index([recruitId])
+  @@index([date])
+  @@index([type])
+}
+
+model StatusHistory {
+  id             String   @id @default(cuid())
+  recruitId      String
+  previousStatus String
+  newStatus      String
+  changeDate     DateTime @default(now())
+  reason         String?
+
+  recruit        Recruit  @relation(fields: [recruitId], references: [id], onDelete: Cascade)
+
+  @@index([recruitId])
+}
+
+model PaperDocument {
+  id           String   @id @default(cuid())
+  recruitId    String
+  documentName String
+  filePath     String
+  createdAt    DateTime @default(now())
+
+  recruit      Recruit  @relation(fields: [recruitId], references: [id], onDelete: Cascade)
+
+  @@index([recruitId])
+}

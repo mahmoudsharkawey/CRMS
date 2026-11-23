@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary-container":"#0f2042","tertiary-fixed-dim":"#e9c176","on-tertiary":"#ffffff","on-surface-variant":"#45464e","surface-container-low":"#eff4ff","on-tertiary-fixed-variant":"#5d4201","on-secondary-fixed":"#00164e","on-primary-container":"#7988b0","on-primary-fixed":"#081a3c","primary":"#000922","surface-tint":"#4f5e83","surface-container-lowest":"#ffffff","on-secondary-fixed-variant":"#264191","background":"#f8f9ff","primary-fixed":"#d9e2ff","inverse-surface":"#213145","surface-container-high":"#dce9ff","on-tertiary-fixed":"#261900","inverse-on-surface":"#eaf1ff","secondary-container":"#8fa7fe","on-primary":"#ffffff","primary-fixed-dim":"#b6c6f1","outline":"#75777f","on-tertiary-container":"#a68440","surface-dim":"#cbdbf5","secondary":"#4059aa","tertiary-container":"#2e1f00","on-error-container":"#93000a","surface-bright":"#f8f9ff","tertiary-fixed":"#ffdea5","error":"#ba1a1a","surface-container":"#e5eeff","secondary-fixed":"#dce1ff","tertiary":"#110a00","error-container":"#ffdad6","on-background":"#0b1c30","surface-variant":"#d3e4fe","secondary-fixed-dim":"#b6c4ff","on-secondary-container":"#1d3989","on-secondary":"#ffffff","on-primary-fixed-variant":"#37466a","surface-container-highest":"#d3e4fe","inverse-primary":"#b6c6f1","outline-variant":"#c5c6cf","on-error":"#ffffff","surface":"#f8f9ff","on-surface":"#0b1c30"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-lg":"1.5rem","margin-sm":"1rem",margin:"2rem",gutter:"1.5rem","gutter-sm":"1rem","space-xl":"2.5rem","space-md":"1rem","space-sm":"0.5rem","space-xs":"0.25rem"},fontFamily:{"title-md":["IBM Plex Sans"],"body-sm":["IBM Plex Sans"],"label-md":["IBM Plex Sans"],"headline-lg":["IBM Plex Sans"],"headline-lg-mobile":["IBM Plex Sans"],"body-md":["IBM Plex Sans"],"body-lg":["IBM Plex Sans"],"label-sm":["IBM Plex Sans"],"headline-md":["IBM Plex Sans"],"label-lg":["IBM Plex Sans"],"headline-sm":["IBM Plex Sans"],display:["IBM Plex Sans"]},fontSize:{"title-md":["16px",{lineHeight:"24px",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}],"label-md":["12px",{lineHeight:"16px",fontWeight:"500"}],"headline-lg":["28px",{lineHeight:"38px",fontWeight:"700"}],"headline-lg-mobile":["22px",{lineHeight:"30px",fontWeight:"700"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"body-lg":["16px",{lineHeight:"26px",fontWeight:"400"}],"label-sm":["11px",{lineHeight:"14px",fontWeight:"500"}],"headline-md":["22px",{lineHeight:"32px",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",fontWeight:"500"}],"headline-sm":["18px",{lineHeight:"26px",fontWeight:"600"}],display:["36px",{lineHeight:"48px",fontWeight:"700"}]}}}};</script></head><body class="bg-background font-body-md text-on-background antialiased"><header class="fixed top-0 inset-x-0 h-16 z-50 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-gutter flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-JsBVVI1zvxrGIeyN1V44B4Z6qJPBW3lTWy_UfvfuHsP9voXKgoPtMxPP5GI6AWw909ZksBB6QzrqLDL3eVajJbcaEkWsUJ1kJAe6pdYX9bgUKRb8SvQQ9ukUaXUFqs5vXPIUnyws2sCNoFR6IT26tsBhbN1ozxedvdQZV9RSXtjOuXfkuWqVJn2x95mLYsUZx581_1CyQXYa_5HSWkTS4xa-rN4SRv6iRGSHw3Ff"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">إدارة قوات أمن جنوب سيناء</span><span class="font-label-sm text-label-sm text-on-surface-variant">منظومة شؤون المجندين - وزارة الداخلية</span></div></div><div class="flex items-center gap-space-lg"><div class="hidden lg:flex items-center gap-space-md bg-surface-container-low px-space-md py-space-xs rounded-xl"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface-variant">حالة النظام: نشط ومؤمن</span></div><span class="text-outline-variant">|</span><span class="font-label-sm text-label-sm text-on-surface-variant">المسؤول: رائد / أحمد عبد الله (شؤون المجندين)</span></div><div class="flex items-center gap-space-sm"><button class="p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-title-md">notifications</span></button><button class="p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-title-md">lock</span></button></div></div></div></header><aside class="fixed right-0 top-16 bottom-0 w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex flex-col justify-between py-space-md"><div class="px-space-md flex flex-col gap-space-md"><div class="px-space-sm py-space-xs"><span class="font-label-sm text-label-sm text-on-tertiary-fixed-variant bg-tertiary-fixed px-space-sm py-space-xs rounded-lg">نطاق العمليات: جنوب سيناء</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="search-conscripts" href="#"><span class="material-symbols-outlined text-title-md">person_search</span>البحث عن مجند</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="personnel-affairs" href="#"><span class="material-symbols-outlined text-title-md">badge</span>شؤون الأفراد</a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg transition-colors bg-primary-container text-on-primary-container font-headline-sm" data-path="records-registry" href="#"><span class="material-symbols-outlined text-title-md">folder_managed</span>السجلات</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="unit-distribution" href="#"><span class="material-symbols-outlined text-title-md">apartment</span>توزيع الوحدات والكتائب</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="service-leaves" href="#"><span class="material-symbols-outlined text-title-md">event_available</span>الإجازات والمأموريات</a></nav></div><div class="px-space-md"><div class="p-space-md bg-surface-container-low rounded-xl flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs text-on-primary-container"><span class="material-symbols-outlined text-label-md">security</span><span class="font-label-md text-label-md font-semibold">منظومة السجلات المشفرة</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">جلسة العمل مراقبة وفقاً للتعليمات الأمنية المستديمة.</p></div></div></aside><div class="pr-64"><main class="relative pt-16 w-full min-h-screen px-margin py-margin bg-background"><div class="flex flex-col w-full relative">
+<!-- Underlay: Active Conscript File Background (Dimmed & Scaled for Immersive Elevation) -->
+<div class="w-full filter blur-[2px] opacity-40 select-none pointer-events-none transition-all duration-300">
+<!-- Quick Conscript Dossier Top Summary Bar -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-space-md flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<img class="w-16 h-16 rounded-xl object-cover shadow-sm" data-alt="Official portrait photo of a young Egyptian conscript recruit in military security police uniform looking disciplined, neutral background, institutional lighting, south sinai security force" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgvN7Xg268iGe0PuRAbQQyxMvElKl5o9i-JR8bwfEF5Qn7Ifj3x7IYmDfAYP4kL6xq61JkMqikVPZJmA2DQeFFeyfpP02b3BVARmDKN9JEI7JoS_BUOKmkgH7xexhSLP3vQRy_98FVhrlx248vQXy1gDdA4gp1QJTMzfy6PDuK_m7-5dq-ShnNo_wDFpkrUKY2KVieEeCOlNLe52TBVsbhrxvWEVe4nsI5Yr3KRIcV"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<h2 class="font-headline-sm text-headline-sm text-primary">طارق كمال عبد الرحمن حسن</h2>
+<span class="bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm px-space-sm py-0.5 rounded">قوة أساسية / بالخدمة</span>
+</div>
+<div class="flex items-center gap-space-md mt-1 text-on-surface-variant font-label-md text-label-md">
+<span>الرقم العسكري: <span class="font-mono text-on-surface font-semibold">2023/18420</span></span>
+<span class="text-outline-variant">|</span>
+<span>الكتيبة: الكتيبة الثانية مهام خاصة - الطور</span>
+<span class="text-outline-variant">|</span>
+<span>السلاح: حراسات وتأمين منشآت</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="text-left bg-surface-container-low px-space-md py-space-sm rounded-lg">
+<span class="block font-label-sm text-label-sm text-on-surface-variant">تاريخ التسريح المقرر</span>
+<span class="font-title-md text-title-md text-primary font-bold">1 نوفمبر 2025</span>
+</div>
+</div>
+</div>
+<!-- Underlying Dossier Tabs and Medical/Administrative Records Preview -->
+<div class="grid grid-cols-12 gap-gutter">
+<div class="col-span-12 lg:col-span-8 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-sm mb-space-md bg-surface-container-low px-space-md py-space-xs rounded-lg">
+<span class="font-title-md text-title-md text-primary font-semibold">السجل التراكمي للخدمة والانضباط</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">إجمالي القيود: 14 قيداً</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary">medical_services</span>
+<span class="font-body-md text-body-md text-on-surface">فحص دوري للياقة البدنية - مستشفى الطور العام</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">14 مارس 2024</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-error">gavel</span>
+<span class="font-body-md text-body-md text-on-surface">أورنيك انضباطي - تأخر عن التمام الصباحي</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">02 يناير 2024</span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-4 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<h3 class="font-title-md text-title-md text-primary mb-space-sm">الملف الطبي الأساسي</h3>
+<div class="space-y-2 text-body-sm font-body-sm text-on-surface-variant">
+<div class="flex justify-between py-1 bg-surface-container-low px-space-xs rounded">
+<span>فصيلة الدم:</span>
+<span class="font-bold text-primary font-mono">O+</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-low px-space-xs rounded">
+<span>المستوى الطبي:</span>
+<span class="font-bold text-primary">لائق أ (ميداني)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal Backdrop Overlay (Dark institutional overlay with tonal depth) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-space-md bg-primary-container/60 backdrop-blur-sm transition-opacity duration-300" id="recordModalOverlay">
+<!-- Bespoke Modal Card Container -->
+<div class="bg-surface-container-lowest w-full max-w-4xl max-h-[942px] flex flex-col rounded-xl shadow-[0_20px_40px_rgba(15,32,66,0.22)] overflow-hidden transition-all duration-300 transform scale-100" id="modalBox">
+<!-- 1. Modal Header (Official Police Navy & Subtle Gold Accent) -->
+<div class="relative bg-gradient-to-l from-primary via-primary-container to-primary-container px-space-lg py-space-md text-on-primary shadow-sm flex items-center justify-between">
+<!-- Subtle Institutional Pattern Decoration -->
+<div class="absolute -left-12 -top-12 w-40 h-40 bg-surface-tint/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center gap-space-md relative z-10">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low/10 flex items-center justify-center text-tertiary-fixed shadow-inner">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">post_add</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<h1 class="font-headline-sm text-headline-sm text-on-primary tracking-tight">إضافة / تعديل قيد بالسجل الإداري والمرضي</h1>
+<span class="bg-tertiary-fixed/20 text-tertiary-fixed font-label-sm text-label-sm px-space-xs py-0.5 rounded">نموذج رسمي مؤمن</span>
+</div>
+<div class="flex items-center gap-space-sm mt-1 text-on-primary-container font-label-md text-label-md">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-label-md text-tertiary-fixed-dim">badge</span>
+                جندي مجند / <strong class="text-on-primary font-medium">طارق كمال عبد الرحمن</strong>
+</span>
+<span class="text-outline-variant opacity-60">|</span>
+<span class="font-mono text-tertiary-fixed-dim bg-primary/40 px-2 py-0.5 rounded text-label-sm">رقم الشرطة: 2023/18420</span>
+<span class="text-outline-variant opacity-60">|</span>
+<span class="text-on-primary-container">قوات أمن جنوب سيناء</span>
+</div>
+</div>
+</div>
+<!-- Close Button (X) -->
+<button class="relative z-10 w-9 h-9 rounded-lg bg-white/10 hover:bg-white/20 text-on-primary flex items-center justify-center transition-colors focus:outline-none" id="closeModalBtn" onclick="toggleModal(false)" title="إغلاق النافذة" type="button">
+<span class="material-symbols-outlined text-title-md">close</span>
+</button>
+</div>
+<!-- 2. Modal Body (Scrollable Structured Form Fields) -->
+<form class="flex-1 overflow-y-auto p-space-lg space-y-space-lg bg-surface" id="recordForm">
+<!-- Context Banner: Classification Hint -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-title-md">info</span>
+<span>يتم إدراج هذا القيد آلياً بالسجل الانضباطي وتحديث ملف الخدمة الميدانية للمجند فور الاعتماد.</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium">كود الأرشفة: #SIN-2024-AD9</span>
+</div>
+<!-- Section: Essential Classification Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<!-- Record Type Selection (Dropdown) -->
+<div class="md:col-span-4 flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center justify-between" for="recordType">
+<span>نوع السجل / البيان <span class="text-error">*</span></span>
+<span class="text-tertiary-container font-label-sm text-label-sm">إلزامي</span>
+</label>
+<div class="relative">
+<select class="w-full h-11 bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-lg px-space-md pr-10 pl-space-md shadow-sm appearance-none focus:outline-none focus:bg-surface-container-low transition-all cursor-pointer" id="recordType">
+<option selected="" value="disciplinary">جزاء انضباطي / أورنيك عسكري</option>
+<option value="medical_check">كشف طبي عام</option>
+<option value="medical_report">تقرير طبي تخصصي</option>
+<option value="imaging_lab">فحص وأشعة وتحاليل</option>
+<option value="service_leave">إجازة (ميدانية / سنوية / بدل راحة)</option>
+<option value="sick_leave">راحة مرضية معتمدة</option>
+<option value="medical_equipment">جهاز طبي / صرف مستلزمات</option>
+</select>
+<div class="absolute right-3 top-3 pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-title-md">category</span>
+</div>
+<div class="absolute left-3 top-3 pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-title-md">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Date Picker -->
+<div class="md:col-span-4 flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center justify-between" for="recordDate">
+<span>تاريخ الإجراء / الواقعة <span class="text-error">*</span></span>
+<span class="font-mono text-label-sm text-on-surface-variant">YYYY-MM-DD</span>
+</label>
+<div class="relative">
+<input class="w-full h-11 bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-lg px-space-md pr-10 shadow-sm focus:outline-none focus:bg-surface-container-low transition-all" id="recordDate" type="date" value="2024-03-18"/>
+<div class="absolute right-3 top-3 pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-title-md">calendar_month</span>
+</div>
+</div>
+</div>
+<!-- Duration (Duration of leave, detention, etc.) -->
+<div class="md:col-span-4 flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center justify-between" for="recordDuration">
+<span>المدة الزمنية (إن وجدت)</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">مثال: يومان، 5 أيام</span>
+</label>
+<div class="relative">
+<input class="w-full h-11 bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-lg px-space-md pr-10 shadow-sm focus:outline-none focus:bg-surface-container-low transition-all" id="recordDuration" placeholder="أدخل المدة المحددة..." type="text" value="يومان حبس (48 ساعة)"/>
+<div class="absolute right-3 top-3 pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-title-md">schedule</span>
+</div>
+</div>
+</div>
+<!-- Issuing Entity / Hospital / Unit -->
+<div class="md:col-span-8 flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center justify-between" for="issuingEntity">
+<span>الجهة أو المستشفى أو الوحدة مصدرة القرار <span class="text-error">*</span></span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">الجهة الرسمية المعتمدة</span>
+</label>
+<div class="relative">
+<input class="w-full h-11 bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-lg px-space-md pr-10 shadow-sm focus:outline-none focus:bg-surface-container-low transition-all" id="issuingEntity" placeholder="مثال: قيادة معسكر أمن الطور أو مستشفى الشرطة بالعجوزة" type="text" value="قيادة معسكر أمن الطور - كتيبة التدريب الثانية"/>
+<div class="absolute right-3 top-3 pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-title-md">domain</span>
+</div>
+</div>
+</div>
+<!-- Officer in Charge / Approver Reference -->
+<div class="md:col-span-4 flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold" for="officerRef">
+              الضابط المسؤول / الأمر بالعقوبة
+            </label>
+<div class="relative">
+<input class="w-full h-11 bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-lg px-space-md pr-10 shadow-sm focus:outline-none focus:bg-surface-container-low transition-all" id="officerRef" type="text" value="مقدم / حسام الجوهري (قائد الكتيبة)"/>
+<div class="absolute right-3 top-3 pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-title-md">shield_person</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Details & Description Textarea -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center justify-between" for="recordDescription">
+<span>التفاصيل وموجبات القرار / التوصيف الطبي الكامل <span class="text-error">*</span></span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">بيان الحيثيات الرسمية بدقة</span>
+</label>
+<div class="relative">
+<textarea class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-lg p-space-md pr-10 shadow-sm focus:outline-none focus:bg-surface-container-low transition-all leading-relaxed" id="recordDescription" placeholder="أدخل تفاصيل التقرير الطبي أو مبررات القرار الإداري والجزاء الانضباطي بالتفصيل..." rows="4">تم توقيع جزاء حبس لمدة يومين بمعسكر التدريب بالطور، لعدم الالتزام بضوابط الضبط والربط والتأخر عن تمام الطابور الصباحي طبقاً للتعليمات الانضباطية العسكرية المتبعة، مع التنبيه المشدد بالالتزام التام.</textarea>
+<div class="absolute right-3 top-4 pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-title-md">description</span>
+</div>
+</div>
+</div>
+<!-- 3. Attachments & Scanned Documents Section -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-title-md text-secondary">attach_file</span>
+              المستندات والأوراق الثبوتية المؤيدة (الأورنيك / التقرير المعتمد)
+            </label>
+<span class="font-label-sm text-label-sm text-on-surface-variant">الحد الأقصى 15 ميجابايت للملف الواحد</span>
+</div>
+<!-- Drag and Drop Dropzone -->
+<div class="group relative rounded-xl p-space-lg text-center bg-surface-container-lowest hover:bg-surface-container-low transition-colors duration-200 cursor-pointer shadow-sm" id="dropZone">
+<input accept=".pdf,.jpg,.jpeg,.png" class="absolute inset-0 opacity-0 cursor-pointer z-10" id="fileInput" multiple="" type="file"/>
+<div class="flex flex-col items-center justify-center gap-space-xs pointer-events-none">
+<div class="w-12 h-12 rounded-full bg-surface-container-low group-hover:bg-primary-container/10 flex items-center justify-center text-secondary transition-all">
+<span class="material-symbols-outlined text-headline-sm">cloud_upload</span>
+</div>
+<p class="font-title-md text-title-md text-primary font-medium mt-1">
+                سحب وإفلات صورة المستند / الأورنيك / التقرير الطبي هنا
+              </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                أو <span class="text-secondary font-semibold underline underline-offset-4">تصفح ملفات الجهاز</span> بصيغ (PDF, PNG, JPG)
+              </p>
+</div>
+</div>
+<!-- Uploaded Documents Preview Items List -->
+<div class="space-y-space-xs mt-space-xs" id="attachmentsList">
+<!-- Item 1: Active Presumed Attachment -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-lowest rounded-lg shadow-sm hover:shadow transition-shadow">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-error-container/20 text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-title-md">picture_as_pdf</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-lg text-label-lg font-mono font-medium text-primary" dir="ltr">أورنيك_جزاء_رقم_412.pdf</span>
+<span class="bg-surface-container-low text-on-surface font-label-sm text-label-sm px-space-xs py-0.5 rounded">1.2 ميجابايت</span>
+</div>
+<span class="flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                    تم الرفع والفحص الأمني بنجاح • مشفر وموقع رقمياً
+                  </span>
+</div>
+</div>
+<!-- Action buttons for document -->
+<div class="flex items-center gap-space-xs">
+<button class="p-space-xs text-on-surface-variant hover:text-secondary hover:bg-surface-container-low rounded-lg transition-colors" title="معاينة المستند" type="button">
+<span class="material-symbols-outlined text-title-md">visibility</span>
+</button>
+<button class="p-space-xs text-on-surface-variant hover:text-error hover:bg-error-container/20 rounded-lg transition-colors" onclick="this.closest('.flex.items-center.justify-between').remove();" title="حذف المرفق" type="button">
+<span class="material-symbols-outlined text-title-md">delete</span>
+</button>
+</div>
+</div>
+<!-- Item 2: Secondary Supporting Document Preview -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-lowest rounded-lg shadow-sm hover:shadow transition-shadow">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-title-md">image</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-lg text-label-lg font-mono font-medium text-primary" dir="ltr">صورة_دفتر_حضور_طابور_الطور.jpg</span>
+<span class="bg-surface-container-low text-on-surface font-label-sm text-label-sm px-space-xs py-0.5 rounded">740 كيلوبايت</span>
+</div>
+<span class="flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                    صورة إثبات حالة معتمدة
+                  </span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="p-space-xs text-on-surface-variant hover:text-secondary hover:bg-surface-container-low rounded-lg transition-colors" title="معاينة المستند" type="button">
+<span class="material-symbols-outlined text-title-md">visibility</span>
+</button>
+<button class="p-space-xs text-on-surface-variant hover:text-error hover:bg-error-container/20 rounded-lg transition-colors" onclick="this.closest('.flex.items-center.justify-between').remove();" title="حذف المرفق" type="button">
+<span class="material-symbols-outlined text-title-md">delete</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Institutional Legal Compliance Checkbox -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex items-start gap-space-md">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer" id="confirmVerification" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface cursor-pointer select-none" for="confirmVerification">
+            أقر أنا مسجل البيانات بصحة كافة البنود الواردة أعلاه ومطابقتها للأورنيك العسكري رقم <strong>(412/ج)</strong> الصادر من جهة الاختصاص، وتحت إشراف ضابط شؤون المجندين بالمديرية.
+          </label>
+</div>
+</form>
+<!-- 3. Modal Footer Controls (Actions) -->
+<div class="bg-surface-container-lowest px-space-lg py-space-md shadow-md flex flex-wrap items-center justify-between gap-space-md">
+<!-- Status indicator -->
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+<span>وضع التحرير النشط - سجل رقم #SIN-8841</span>
+</div>
+<!-- Buttons CTA -->
+<div class="flex items-center gap-space-md">
+<!-- Secondary Action: Cancel -->
+<button class="px-space-lg h-11 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-lg text-label-lg rounded-lg transition-colors focus:outline-none flex items-center gap-space-xs" onclick="toggleModal(false)" type="button">
+<span class="material-symbols-outlined text-title-md">cancel</span>
+<span>إلغاء الأمر والتراجع</span>
+</button>
+<!-- Primary Action: Save & Update Record -->
+<button class="px-space-xl h-11 bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg shadow-sm hover:shadow transition-all focus:outline-none flex items-center gap-space-xs group" id="saveRecordBtn" onclick="submitRecordForm()" type="button">
+<span class="material-symbols-outlined text-tertiary-fixed text-title-md group-hover:scale-110 transition-transform">verified</span>
+<span>حفظ السجل وتحديث الملف</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Notification Toast Container for Save Feedback -->
+<div class="fixed bottom-6 left-6 z-[60] hidden transform transition-all duration-300 translate-y-4 opacity-0" id="toastNotification">
+<div class="bg-primary text-on-primary px-space-lg py-space-md rounded-xl shadow-2xl flex items-center gap-space-md">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-title-md">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-primary">تم حفظ القيد بنجاح</span>
+<span class="font-body-sm text-body-sm text-on-primary-container">تم تحديث السجل العسكري للمجند طارق كمال برقم مرجعي معتمد.</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Dynamic Modal Toggle & Interaction Logic
+  function toggleModal(show) {
+    const modalOverlay = document.getElementById('recordModalOverlay');
+    const modalBox = document.getElementById('modalBox');
+
+    if (!modalOverlay || !modalBox) return;
+
+    if (show) {
+      modalOverlay.classList.remove('hidden');
+      setTimeout(() => {
+        modalOverlay.classList.remove('opacity-0');
+        modalBox.classList.remove('scale-95');
+        modalBox.classList.add('scale-100');
+      }, 10);
+    } else {
+      modalOverlay.classList.add('opacity-0');
+      modalBox.classList.remove('scale-100');
+      modalBox.classList.add('scale-95');
+      setTimeout(() => {
+        modalOverlay.classList.add('hidden');
+      }, 250);
+    }
+  }
+
+  // Handle Save Action Simulation
+  function submitRecordForm() {
+    const btn = document.getElementById('saveRecordBtn');
+    const originalText = btn.innerHTML;
+
+    // Show loading state
+    btn.disabled = true;
+    btn.innerHTML = `
+      <span class="material-symbols-outlined animate-spin text-tertiary-fixed text-title-md">progress_activity</span>
+      <span>جارٍ حفظ السجل المشفر...</span>
+    `;
+
+    setTimeout(() => {
+      btn.disabled = false;
+      btn.innerHTML = originalText;
+      
+      // Close Modal and Show Toast
+      toggleModal(false);
+      showToast();
+    }, 900);
+  }
+
+  // Feedback Notification Toast
+  function showToast() {
+    const toast = document.getElementById('toastNotification');
+    if (!toast) return;
+
+    toast.classList.remove('hidden');
+    setTimeout(() => {
+      toast.classList.remove('opacity-0', 'translate-y-4');
+      toast.classList.add('opacity-100', 'translate-y-0');
+    }, 20);
+
+    setTimeout(() => {
+      toast.classList.remove('opacity-100', 'translate-y-0');
+      toast.classList.add('opacity-0', 'translate-y-4');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 300);
+    }, 3500);
+  }
+
+  // Keyboard shortcut: Escape to close modal
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      toggleModal(false);
+    }
+  });
+
+  // Drag & drop file highlight effect
+  const dropZone = document.getElementById('dropZone');
+  if (dropZone) {
+    ['dragenter', 'dragover'].forEach(eventName => {
+      dropZone.addEventListener(eventName, (e) => {
+        e.preventDefault();
+        dropZone.classList.add('bg-surface-container');
+      }, false);
+    });
+
+    ['dragleave', 'drop'].forEach(eventName => {
+      dropZone.addEventListener(eventName, (e) => {
+        e.preventDefault();
+        dropZone.classList.remove('bg-surface-container');
+      }, false);
+    });
+  }
+</script></main></div></body></html>
