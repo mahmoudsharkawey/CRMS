@@ -1,0 +1,11 @@
+{
+  "name": "crms-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix crms run dev",
+    "build": "npm --prefix crms run build",
+    "start": "npm --prefix crms run start",
+    "postinstall": "npm --prefix crms run postinstall"
+  }
+}
