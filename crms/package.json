@@ -4,13 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/prepare-prisma.js && prisma generate && next build --webpack",
-    "postinstall": "node scripts/prepare-prisma.js && prisma generate",
+    "build": "next build --webpack",
     "start": "next start",
-    "lint": "eslint",
-    "prisma:generate": "prisma generate",
-    "prisma:push": "prisma db push",
-    "prisma:seed": "node prisma/seed.js"
+    "lint": "eslint"
   },
   "dependencies": {
     "@prisma/client": "^6.4.1",

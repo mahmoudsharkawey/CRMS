@@ -1,0 +1,456 @@
+[
+  {
+    "id": "rec_1",
+    "fullName": "طارق كمال عبد الرحمن حسن",
+    "nationalId": "29903152801452",
+    "policeNumber": "2023/18420",
+    "fileNumber": "م/1402/ط",
+    "militaryNumber": "2023/18420/ج.س",
+    "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400",
+    "dateOfBirth": "1999-03-15",
+    "education": "مؤهل متوسط - دبلوم فني صناعي",
+    "serviceInformation": "سرية تأمين كمين عيون موسى - قطاع شمال الطور",
+    "administrativeStatus": "رديف",
+    "createdAt": "2023-01-15T08:00:00.000Z",
+    "updatedAt": "2026-11-24T03:35:32.240Z",
+    "records": [
+      {
+        "id": "rec_1_rec_1",
+        "recruitId": "rec_1",
+        "type": "كشف طبي",
+        "date": "2024-10-18T00:00:00.000Z",
+        "entity": "مستشفى الطور العسكري / عيادة الباطنة",
+        "description": "كشف طبي باطنة إثر شكوى نزلة معوية حادة وإجهاد حراري ناتج عن الخدمة الميدانية",
+        "details": "صرف محاليل وريدية وعلاج مضاد للتقلصات مع إعفاء من طابور اللياقة 48 ساعة",
+        "duration": "48 ساعة إعفاء",
+        "createdAt": "2024-10-18T00:00:00.000Z",
+        "updatedAt": "2024-10-18T00:00:00.000Z"
+      },
+      {
+        "id": "rec_1_rec_2",
+        "recruitId": "rec_1",
+        "type": "إجازة مرضية",
+        "date": "2024-08-14T00:00:00.000Z",
+        "entity": "مستشفى هيئة الشرطة بمدينة نصر / عيادة الطور",
+        "description": "إجازة مرضية معتمدة لالتواء حاد بمفصل الكاحل الأيمن مع وذمة خفيفة أثناء التدريب",
+        "details": "راحة سلبية تامة وتثبيت رباط ضاغط ومسكنات ومضادات التهاب",
+        "startDate": "2024-08-14T00:00:00.000Z",
+        "endDate": "2024-08-17T00:00:00.000Z",
+        "duration": "3 أيام",
+        "createdAt": "2024-08-14T00:00:00.000Z",
+        "updatedAt": "2024-08-14T00:00:00.000Z"
+      },
+      {
+        "id": "rec_1_rec_3",
+        "recruitId": "rec_1",
+        "type": "أشعة",
+        "date": "2024-08-14T00:00:00.000Z",
+        "entity": "قسم الأشعة - مستشفى الطور العام",
+        "description": "أشعة سينية عادية على الكاحل الأيمن في وضعيتين (AP & Lateral)",
+        "details": "تقرير الأشعة: سلامة العظام من أي شروخ أو كسور عظمية، ووجود ارتشاح بالأنسجة الرخوة",
+        "attachment": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=600",
+        "createdAt": "2024-08-14T00:00:00.000Z",
+        "updatedAt": "2024-08-14T00:00:00.000Z"
+      },
+      {
+        "id": "rec_1_rec_4",
+        "recruitId": "rec_1",
+        "type": "راحة",
+        "date": "2024-05-10T00:00:00.000Z",
+        "entity": "عيادة معسكر أمن الطور الميدانية",
+        "description": "راحة مرضية لارتفاع مفاجئ بدرجة الحرارة والتهاب لوزتين حاد",
+        "details": "صرف خافض حرارة ومضاد حيوي أوجمنتين 1 جم مع الراحة بالعنبر",
+        "startDate": "2024-05-10T00:00:00.000Z",
+        "endDate": "2024-05-12T00:00:00.000Z",
+        "duration": "يومان",
+        "createdAt": "2024-05-10T00:00:00.000Z",
+        "updatedAt": "2024-05-10T00:00:00.000Z"
+      },
+      {
+        "id": "rec_1_rec_5",
+        "recruitId": "rec_1",
+        "type": "أجهزة طبية",
+        "date": "2023-12-05T00:00:00.000Z",
+        "entity": "عيادة الرمد - مستشفى الشرطة بالسويس",
+        "description": "فحص قاع عين وقياس حدة الإبصار وصرف نظارة طبية ميدانية واقية",
+        "details": "استجماتيزم بسيط بالعينين، تقرر صرف نظارة طبية واقية معتمدة للاستخدام في الخدمة الليلية",
+        "duration": "صرف دائم",
+        "createdAt": "2023-12-05T00:00:00.000Z",
+        "updatedAt": "2023-12-05T00:00:00.000Z"
+      },
+      {
+        "id": "rec_1_rec_6",
+        "recruitId": "rec_1",
+        "type": "دخول مستشفى",
+        "date": "2023-09-12T00:00:00.000Z",
+        "entity": "مستشفى هيئة الشرطة بالعجوزة",
+        "description": "حجز وملاحظة سريرية بقسم الجراحة للاشتباه بالتهاب الزائدة الدودية الحاد",
+        "details": "الملاحظة الطبية لمدة 48 ساعة أثبتت تحسن الحالة تحت العلاج التحفظي دون الحاجة لتدخل جراحي عاجل",
+        "startDate": "2023-09-12T00:00:00.000Z",
+        "endDate": "2023-09-14T00:00:00.000Z",
+        "duration": "يومان حجز",
+        "createdAt": "2023-09-12T00:00:00.000Z",
+        "updatedAt": "2023-09-12T00:00:00.000Z"
+      },
+      {
+        "id": "rec_1_rec_7",
+        "recruitId": "rec_1",
+        "type": "جزاء / أورنيك",
+        "date": "2023-07-20T00:00:00.000Z",
+        "entity": "قيادة معسكر أمن الطور - كتيبة التأمين",
+        "description": "توقيع جزاء انضباطي حجز لمدة 24 ساعة بالمعسكر لعدم الالتزام بضوابط تمام النظافة والتأخر عن الطابور الصباحي",
+        "details": "أورنيك جزاء رقم (318/ج) لسنة 2023 مع التنبيه المشدد بالانضباط العسكري",
+        "duration": "24 ساعة حجز",
+        "createdAt": "2023-07-20T00:00:00.000Z",
+        "updatedAt": "2023-07-20T00:00:00.000Z"
+      },
+      {
+        "id": "rec_1_rec_8",
+        "recruitId": "rec_1",
+        "type": "تقرير طبي",
+        "date": "2023-02-10T00:00:00.000Z",
+        "entity": "القومسيون الطبي العسكري للشرطة بالسويس",
+        "description": "تقرير الفحص الطبي الشامل للالتحاق بقطاع قوات أمن جنوب سيناء",
+        "details": "رسم قلب سليم، تحاليل مخبرية معتمدة، كشف قاع عين، أشعة صدر نظيفة. القرار: لائق طبياً مستوى (أ)",
+        "createdAt": "2023-02-10T00:00:00.000Z",
+        "updatedAt": "2023-02-10T00:00:00.000Z"
+      }
+    ],
+    "statusHistory": [
+      {
+        "id": "hist_1795491332239_k41np",
+        "recruitId": "rec_1",
+        "previousStatus": "على القوة",
+        "newStatus": "رديف",
+        "changeDate": "2026-11-24T03:35:32.239Z",
+        "reason": "اختبار تغيير الحالة الإدارية في JSON"
+      },
+      {
+        "id": "rec_1_hist_1",
+        "recruitId": "rec_1",
+        "previousStatus": "مستجد",
+        "newStatus": "على القوة",
+        "changeDate": "2023-03-01T00:00:00.000Z",
+        "reason": "انتهاء فترة التدريب الأساسي بالمعسكر وتوزيعه على قوة سرية الحراسات"
+      }
+    ],
+    "paperDocuments": [
+      {
+        "id": "rec_1_doc_1",
+        "recruitId": "rec_1",
+        "documentName": "السجل العسكري والدفتري الرسمي",
+        "filePath": "https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&q=80&w=800",
+        "createdAt": "2023-01-15T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "rec_2",
+    "fullName": "محمود إبراهيم السيد أحمد",
+    "nationalId": "29807121600981",
+    "policeNumber": "2022/10892",
+    "fileNumber": "س/489/ج.س",
+    "militaryNumber": "2022/10892/ط",
+    "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=400",
+    "dateOfBirth": "1998-07-12",
+    "education": "مؤهل عالي - ليسانس حقوق",
+    "serviceInformation": "سرية الحراسات وتأمين المنشآت - معسكر فرق الأمن بالطور",
+    "administrativeStatus": "على القوة",
+    "createdAt": "2022-10-01T00:00:00.000Z",
+    "updatedAt": "2024-09-01T00:00:00.000Z",
+    "records": [
+      {
+        "id": "rec_2_rec_1",
+        "recruitId": "rec_2",
+        "type": "إجازة مرضية",
+        "date": "2024-09-01T00:00:00.000Z",
+        "entity": "مستشفى الطور العام",
+        "description": "إجازة مرضية لنزلة شعبية حادة وكحة مستمرة",
+        "details": "صرف أدوية موسعة للشعب ومضادات حيوية مع الراحة التامة",
+        "startDate": "2024-09-01T00:00:00.000Z",
+        "endDate": "2024-09-04T00:00:00.000Z",
+        "duration": "3 أيام",
+        "createdAt": "2024-09-01T00:00:00.000Z",
+        "updatedAt": "2024-09-01T00:00:00.000Z"
+      },
+      {
+        "id": "rec_2_rec_2",
+        "recruitId": "rec_2",
+        "type": "كشف طبي",
+        "date": "2024-04-12T00:00:00.000Z",
+        "entity": "عيادة الأسنان - مستشفى الشرطة بالسويس",
+        "description": "علاج عصب وحشو ضرس بالفك السفلي الأيسر",
+        "details": "تم إجراء جلسة الحشو بنجاح ومتابعة الحالة مع إعفاء من الوجبات الجافة 24 ساعة",
+        "createdAt": "2024-04-12T00:00:00.000Z",
+        "updatedAt": "2024-04-12T00:00:00.000Z"
+      },
+      {
+        "id": "rec_2_rec_3",
+        "recruitId": "rec_2",
+        "type": "راحة",
+        "date": "2023-11-18T00:00:00.000Z",
+        "entity": "عيادة المعسكر الميدانية",
+        "description": "راحة مرضية لإجهاد عضلي حاد بعضلات الظهر بعد تدريب الرماية",
+        "details": "مسكنات عضلية ومراهم موضعية مع راحة 48 ساعة",
+        "startDate": "2023-11-18T00:00:00.000Z",
+        "endDate": "2023-11-20T00:00:00.000Z",
+        "duration": "يومان",
+        "createdAt": "2023-11-18T00:00:00.000Z",
+        "updatedAt": "2023-11-18T00:00:00.000Z"
+      }
+    ],
+    "statusHistory": [
+      {
+        "id": "rec_2_hist_1",
+        "recruitId": "rec_2",
+        "previousStatus": "مستجد",
+        "newStatus": "على القوة",
+        "changeDate": "2022-11-15T00:00:00.000Z",
+        "reason": "التخرج من جناح المستجدين والانضمام للقوة الأساسية"
+      }
+    ],
+    "paperDocuments": [
+      {
+        "id": "rec_2_doc_1",
+        "recruitId": "rec_2",
+        "documentName": "أرشيف السجل العسكري الورقي",
+        "filePath": "https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&q=80&w=800",
+        "createdAt": "2022-10-01T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "rec_3",
+    "fullName": "أحمد عبد المنعم شلبي",
+    "nationalId": "30005221901124",
+    "policeNumber": "2023/04415",
+    "fileNumber": "س/812/ش.ش",
+    "militaryNumber": "2023/04415/ش",
+    "photo": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400",
+    "dateOfBirth": "2000-05-22",
+    "education": "مؤهل متوسط - دبلوم صناعي",
+    "serviceInformation": "كتيبة دعم الطرق والكمائن - قطاع قسم شرطة شرم الشيخ",
+    "administrativeStatus": "على القوة",
+    "createdAt": "2023-01-20T00:00:00.000Z",
+    "updatedAt": "2024-06-15T00:00:00.000Z",
+    "records": [
+      {
+        "id": "rec_3_rec_1",
+        "recruitId": "rec_3",
+        "type": "كشف طبي",
+        "date": "2024-06-15T00:00:00.000Z",
+        "entity": "مستشفى شرم الشيخ الدولي",
+        "description": "كشف عيون وحساسية قرنية ناتجة عن الغبار ورياح الصحراء بالكمين",
+        "details": "صرف قطرات معقمة ومرطبة للعين ومرهم مضاد للالتهاب",
+        "createdAt": "2024-06-15T00:00:00.000Z",
+        "updatedAt": "2024-06-15T00:00:00.000Z"
+      },
+      {
+        "id": "rec_3_rec_2",
+        "recruitId": "rec_3",
+        "type": "إجازة مرضية",
+        "date": "2024-01-10T00:00:00.000Z",
+        "entity": "مستشفى الطور العام",
+        "description": "إجازة مرضية لإصابة كدمية باليد اليمنى أثناء خدمة تأمين الكمين",
+        "details": "تثبيت جبيرة جبسية مؤقتة وإجازة راحة سلبية",
+        "startDate": "2024-01-10T00:00:00.000Z",
+        "endDate": "2024-01-17T00:00:00.000Z",
+        "duration": "7 أيام",
+        "createdAt": "2024-01-10T00:00:00.000Z",
+        "updatedAt": "2024-01-10T00:00:00.000Z"
+      }
+    ],
+    "statusHistory": [
+      {
+        "id": "rec_3_hist_1",
+        "recruitId": "rec_3",
+        "previousStatus": "مستجد",
+        "newStatus": "على القوة",
+        "changeDate": "2023-04-01T00:00:00.000Z",
+        "reason": "التوزيع على قطاع شرم الشيخ بعد انتهاء التدريب الأساسي"
+      }
+    ],
+    "paperDocuments": [
+      {
+        "id": "rec_3_doc_1",
+        "recruitId": "rec_3",
+        "documentName": "السجل العسكري الدفتري",
+        "filePath": "https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&q=80&w=800",
+        "createdAt": "2023-01-20T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "rec_4",
+    "fullName": "كريم طارق حسني رضوان",
+    "nationalId": "30201101802341",
+    "policeNumber": "2024/00198",
+    "fileNumber": "س/104/ت.م",
+    "militaryNumber": "2024/00198/م",
+    "photo": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400",
+    "dateOfBirth": "2002-01-10",
+    "education": "فوق متوسط - معهد فني تجاري",
+    "serviceInformation": "مركز تدريب قوات الأمن - جناح المستجدين (معسكر النصر)",
+    "administrativeStatus": "مستجد",
+    "createdAt": "2024-10-01T00:00:00.000Z",
+    "updatedAt": "2024-11-02T00:00:00.000Z",
+    "records": [
+      {
+        "id": "rec_4_rec_1",
+        "recruitId": "rec_4",
+        "type": "كشف طبي",
+        "date": "2024-11-02T00:00:00.000Z",
+        "entity": "عيادة مركز التدريب بالطور",
+        "description": "فحص طبي دوري لمستجدي دفعة نوفمبر 2024 وقياس اللياقة البدنية والوزن والضغط",
+        "details": "لائق طبياً لاستكمال المرحلة الثانية من التدريب الأساسي",
+        "createdAt": "2024-11-02T00:00:00.000Z",
+        "updatedAt": "2024-11-02T00:00:00.000Z"
+      },
+      {
+        "id": "rec_4_rec_2",
+        "recruitId": "rec_4",
+        "type": "إجراءات طبية أخرى",
+        "date": "2024-10-25T00:00:00.000Z",
+        "entity": "عيادة معسكر أمن الطور",
+        "description": "إعطاء التطعيمات واللقاحات الإلزامية (لقاح الحمى الشوكية والتيتانوس)",
+        "details": "تم التطعيم والتسجيل بدفتر التطعيمات العسكري للدفعة",
+        "createdAt": "2024-10-25T00:00:00.000Z",
+        "updatedAt": "2024-10-25T00:00:00.000Z"
+      }
+    ],
+    "statusHistory": [],
+    "paperDocuments": [
+      {
+        "id": "rec_4_doc_1",
+        "recruitId": "rec_4",
+        "documentName": "استمارة فحص المستجدين",
+        "filePath": "https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&q=80&w=800",
+        "createdAt": "2024-10-01T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "rec_5",
+    "fullName": "مصطفى كمال الدين علي",
+    "nationalId": "29704151200345",
+    "policeNumber": "2021/08901",
+    "fileNumber": "س/230/ر.د",
+    "militaryNumber": "2021/08901/ق",
+    "photo": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400",
+    "dateOfBirth": "1997-04-15",
+    "education": "مؤهل عالي - بكالوريوس تجارة",
+    "serviceInformation": "سرية قيادة الإدارة المركزية - مديرية أمن جنوب سيناء بالطور",
+    "administrativeStatus": "رديف",
+    "createdAt": "2021-04-01T00:00:00.000Z",
+    "updatedAt": "2026-11-24T03:32:47.424Z",
+    "records": [
+      {
+        "id": "rec_5_rec_1",
+        "recruitId": "rec_5",
+        "type": "تقرير طبي",
+        "date": "2024-03-25T00:00:00.000Z",
+        "entity": "القومسيون الطبي العسكري بالسويس",
+        "description": "فحص طبي نهائي مسائي لإنهاء الخدمة والتسريح بالقدوة الحسنة",
+        "details": "خلو المجند من أي إصابات أو عجز دائم خلال فترة الخدمة العسكرية، ولائق للاحتياط",
+        "createdAt": "2024-03-25T00:00:00.000Z",
+        "updatedAt": "2024-03-25T00:00:00.000Z"
+      },
+      {
+        "id": "rec_5_rec_2",
+        "recruitId": "rec_5",
+        "type": "إجازة مرضية",
+        "date": "2023-05-14T00:00:00.000Z",
+        "entity": "مستشفى الطور العام",
+        "description": "إجازة مرضية معتمدة لحصوة بالحالب الأيمن",
+        "details": "علاج دوائي ومسكنات وموسعات مع راحة تامة بالمنزل",
+        "startDate": "2023-05-14T00:00:00.000Z",
+        "endDate": "2023-05-20T00:00:00.000Z",
+        "duration": "6 أيام",
+        "createdAt": "2023-05-14T00:00:00.000Z",
+        "updatedAt": "2023-05-14T00:00:00.000Z"
+      }
+    ],
+    "statusHistory": [
+      {
+        "id": "hist_1795491167424_k3khx",
+        "recruitId": "rec_5",
+        "previousStatus": "شطب",
+        "newStatus": "رديف",
+        "changeDate": "2026-11-24T03:32:47.424Z",
+        "reason": null
+      },
+      {
+        "id": "hist_1795491163021_75ng4",
+        "recruitId": "rec_5",
+        "previousStatus": "رديف",
+        "newStatus": "شطب",
+        "changeDate": "2026-11-24T03:32:43.021Z",
+        "reason": null
+      },
+      {
+        "id": "rec_5_hist_1",
+        "recruitId": "rec_5",
+        "previousStatus": "على القوة",
+        "newStatus": "رديف",
+        "changeDate": "2024-04-01T00:00:00.000Z",
+        "reason": "حلول موعد تسريح دفعة أبريل 2021 بالقدوة الحسنة"
+      }
+    ],
+    "paperDocuments": [
+      {
+        "id": "rec_5_doc_1",
+        "recruitId": "rec_5",
+        "documentName": "سجل إنهاء الخدمة والشهادة العسكرية",
+        "filePath": "https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&q=80&w=800",
+        "createdAt": "2021-04-01T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "rec_6",
+    "fullName": "إسلام نبيل حسن مهران",
+    "nationalId": "29908191401823",
+    "policeNumber": "2022/15310",
+    "fileNumber": "س/551/ن.و",
+    "militaryNumber": "2022/15310/ن",
+    "photo": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=400",
+    "dateOfBirth": "1999-08-19",
+    "education": "عادة - الشهادة الإعدادية العامة",
+    "serviceInformation": "سرية حراسة معبر نويبع - ميناء نويبع البحري",
+    "administrativeStatus": "شطب",
+    "createdAt": "2022-10-01T00:00:00.000Z",
+    "updatedAt": "2024-02-20T00:00:00.000Z",
+    "records": [
+      {
+        "id": "rec_6_rec_1",
+        "recruitId": "rec_6",
+        "type": "جزاء / أورنيك",
+        "date": "2024-02-15T00:00:00.000Z",
+        "entity": "قيادة قطاع خليج العقبة - نويبع",
+        "description": "تحرير إثبات غياب لتجاوز مدة الإجازة الميدانية أكثر من 21 يوماً دون عذر مقبول",
+        "details": "إصدار أمر شطب بالقرار الإداري رقم (88) لسنة 2024 وإخطار النيابة العسكرية",
+        "createdAt": "2024-02-15T00:00:00.000Z",
+        "updatedAt": "2024-02-15T00:00:00.000Z"
+      }
+    ],
+    "statusHistory": [
+      {
+        "id": "rec_6_hist_1",
+        "recruitId": "rec_6",
+        "previousStatus": "على القوة",
+        "newStatus": "شطب",
+        "changeDate": "2024-02-20T00:00:00.000Z",
+        "reason": "انقطاع عن الخدمة والغياب لأكثر من 21 يوماً متصلة دون إذن رسمي"
+      }
+    ],
+    "paperDocuments": [
+      {
+        "id": "rec_6_doc_1",
+        "recruitId": "rec_6",
+        "documentName": "ملف الإجراءات الانضباطية وقرار الشطب",
+        "filePath": "https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&q=80&w=800",
+        "createdAt": "2022-10-01T00:00:00.000Z"
+      }
+    ]
+  }
+]

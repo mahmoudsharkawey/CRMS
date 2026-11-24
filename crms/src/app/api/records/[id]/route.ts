@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import prisma from "@/lib/prisma";
+import { updateRecord, deleteRecord } from "@/lib/json-db";
 import { recruitRecordSchema } from "@/lib/validations";
 
 export async function PUT(
@@ -12,19 +12,16 @@ export async function PUT(
     const body = await request.json();
     const validated = recruitRecordSchema.parse(body);
 
-    const updated = await prisma.recruitRecord.update({
-      where: { id },
-      data: {
-        type: validated.type,
-        date: new Date(validated.date),
-        entity: validated.entity || null,
-        description: validated.description || null,
-        details: validated.details || null,
-        startDate: validated.startDate ? new Date(validated.startDate) : null,
-        endDate: validated.endDate ? new Date(validated.endDate) : null,
-        duration: validated.duration || null,
-        attachment: validated.attachment || null,
-      },
+    const updated = await updateRecord(id, {
+      type: validated.type,
+      date: new Date(validated.date),
+      entity: validated.entity || null,
+      description: validated.description || null,
+      details: validated.details || null,
+      startDate: validated.startDate ? new Date(validated.startDate) : null,
+      endDate: validated.endDate ? new Date(validated.endDate) : null,
+      duration: validated.duration || null,
+      attachment: validated.attachment || null,
     });
 
     return NextResponse.json(updated);
@@ -44,10 +41,7 @@ export async function DELETE(
   const { id } = await params;
 
   try {
-    await prisma.recruitRecord.delete({
-      where: { id },
-    });
-
+    await deleteRecord(id);
     return NextResponse.json({ success: true });
   } catch (error: any) {
     console.error("Delete record error:", error);

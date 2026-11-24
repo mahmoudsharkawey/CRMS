@@ -12,7 +12,7 @@
 - **Typography:** خطوط عربية رصينة (Sultan Arabic / Cairo / IBM Plex Sans Arabic).
 - **Icons:** مكتبة Lucide React للأيقونات الإدارية والطبية.
 - **Backend:** Next.js API Routes.
-- **Database & ORM:** Prisma ORM مع دعم كامل لقاعدة بيانات PostgreSQL وSQLite للتشغيل والتطوير المحلي الفوري.
+- **Database & Data Store:** قاعدة بيانات محلية ذاتية بالكامل معتمدة على JSON (`src/lib/json-db.ts`)، تعمل فورياً في أي بيئة (Vercel / Localhost) دون الحاجة لتثبيت أو ربط أي خادم خارجي أو محركات Prisma.
 - **Form Validation:** مكتبة Zod للتحقق الدقيق من البيانات قبل الحفظ.
 - **Document Storage:** طبقة تجريد محلية للأرشيف الورقي والمرفقات (`src/lib/storage.ts`) قابلة للربط مستقبلاً بأي خادم تخزين سحابي معتمد.
 - **Printing & Reports:** طباعة مستندية متقدمة مهيأة لورق الطباعة A4 متوافقة مع متصفحات الويب وأوامر الطباعة الرسمية.

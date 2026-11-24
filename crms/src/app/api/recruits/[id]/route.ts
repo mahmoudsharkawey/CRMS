@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import prisma from "@/lib/prisma";
+import { getRecruitById, updateRecruit } from "@/lib/json-db";
 import { recruitSchema } from "@/lib/validations";
 
 export async function GET(
@@ -9,20 +9,7 @@ export async function GET(
   const { id } = await params;
 
   try {
-    const recruit = await prisma.recruit.findUnique({
-      where: { id },
-      include: {
-        records: {
-          orderBy: { date: "desc" },
-        },
-        statusHistory: {
-          orderBy: { changeDate: "desc" },
-        },
-        paperDocuments: {
-          orderBy: { createdAt: "desc" },
-        },
-      },
-    });
+    const recruit = await getRecruitById(id);
 
     if (!recruit) {
       return NextResponse.json(
@@ -51,20 +38,17 @@ export async function PUT(
     const body = await request.json();
     const validated = recruitSchema.parse(body);
 
-    const updated = await prisma.recruit.update({
-      where: { id },
-      data: {
-        fullName: validated.fullName,
-        nationalId: validated.nationalId,
-        policeNumber: validated.policeNumber,
-        fileNumber: validated.fileNumber,
-        militaryNumber: validated.militaryNumber || null,
-        photo: validated.photo || null,
-        dateOfBirth: validated.dateOfBirth ? new Date(validated.dateOfBirth) : null,
-        education: validated.education || null,
-        serviceInformation: validated.serviceInformation || null,
-        administrativeStatus: validated.administrativeStatus,
-      },
+    const updated = await updateRecruit(id, {
+      fullName: validated.fullName,
+      nationalId: validated.nationalId,
+      policeNumber: validated.policeNumber,
+      fileNumber: validated.fileNumber,
+      militaryNumber: validated.militaryNumber || null,
+      photo: validated.photo || null,
+      dateOfBirth: validated.dateOfBirth || null,
+      education: validated.education || null,
+      serviceInformation: validated.serviceInformation || null,
+      administrativeStatus: validated.administrativeStatus,
     });
 
     return NextResponse.json(updated);

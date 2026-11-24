@@ -29,7 +29,7 @@ async function runTests() {
   // 1. Get all recruits
   console.log("\n[Test 1] GET /api/recruits");
   const recruitsRes = await request({
-    hostname: "localhost",
+    hostname: "127.0.0.1",
     port: 3000,
     path: "/api/recruits",
     method: "GET",
@@ -43,7 +43,7 @@ async function runTests() {
   // 2. Search by name query
   console.log("\n[Test 2] GET /api/recruits?q=طارق");
   const searchNameRes = await request({
-    hostname: "localhost",
+    hostname: "127.0.0.1",
     port: 3000,
     path: `/api/recruits?q=${encodeURIComponent("طارق")}`,
     method: "GET",
@@ -54,7 +54,7 @@ async function runTests() {
   // 3. Search by police number query
   console.log("\n[Test 3] GET /api/recruits?q=18420");
   const searchPoliceRes = await request({
-    hostname: "localhost",
+    hostname: "127.0.0.1",
     port: 3000,
     path: `/api/recruits?q=18420`,
     method: "GET",
@@ -65,7 +65,7 @@ async function runTests() {
   // 4. Get recruit profile with records, history, documents
   console.log(`\n[Test 4] GET /api/recruits/${recruitId}`);
   const profileRes = await request({
-    hostname: "localhost",
+    hostname: "127.0.0.1",
     port: 3000,
     path: `/api/recruits/${recruitId}`,
     method: "GET",
@@ -91,7 +91,7 @@ async function runTests() {
   };
   const addRecordRes = await request(
     {
-      hostname: "localhost",
+      hostname: "127.0.0.1",
       port: 3000,
       path: "/api/records",
       method: "POST",
@@ -109,7 +109,7 @@ async function runTests() {
   console.log(`\n[Test 6] PUT /api/records/${createdRecordId} (Edit Record)`);
   const editRecordRes = await request(
     {
-      hostname: "localhost",
+      hostname: "127.0.0.1",
       port: 3000,
       path: `/api/records/${createdRecordId}`,
       method: "PUT",
@@ -129,7 +129,7 @@ async function runTests() {
   console.log(`\n[Test 7] POST /api/recruits/${recruitId}/status (Change Status)`);
   const statusRes = await request(
     {
-      hostname: "localhost",
+      hostname: "127.0.0.1",
       port: 3000,
       path: `/api/recruits/${recruitId}/status`,
       method: "POST",
@@ -148,7 +148,7 @@ async function runTests() {
   // 8. Re-fetch profile to ensure all additions/changes are persisted
   console.log(`\n[Test 8] Re-verifying Profile Persisted State`);
   const verifyRes = await request({
-    hostname: "localhost",
+    hostname: "127.0.0.1",
     port: 3000,
     path: `/api/recruits/${recruitId}`,
     method: "GET",
@@ -160,7 +160,7 @@ async function runTests() {
   // 9. Clean up test record
   console.log(`\n[Test 9] DELETE /api/records/${createdRecordId}`);
   const deleteRes = await request({
-    hostname: "localhost",
+    hostname: "127.0.0.1",
     port: 3000,
     path: `/api/records/${createdRecordId}`,
     method: "DELETE",
