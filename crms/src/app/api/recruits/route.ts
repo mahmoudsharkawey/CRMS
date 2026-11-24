@@ -1,11 +1,15 @@
 import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
+import { ensureSeedData } from "@/lib/seed-helper";
 
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
   const q = searchParams.get("q")?.trim() || "";
 
   try {
+    // Auto-seed if database is empty on Vercel or fresh deploy
+    await ensureSeedData();
+
     const recruits = await prisma.recruit.findMany({
       where: q
         ? {
