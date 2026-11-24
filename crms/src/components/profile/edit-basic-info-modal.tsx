@@ -74,9 +74,9 @@ export function EditBasicInfoModal({
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#0F2042]/60 backdrop-blur-xs">
       <div className="bg-white w-full max-w-xl max-h-[90vh] flex flex-col rounded-xl shadow-2xl border border-slate-200 overflow-hidden animate-in fade-in zoom-in-95 duration-150">
         {/* Header */}
-        <div className="bg-[#0F2042] px-6 py-4 text-white flex items-center justify-between">
+        <div className="bg-[#0F2042] px-4 py-3 sm:px-6 sm:py-4 text-white flex items-center justify-between">
           <div className="flex items-center gap-2.5">
-            <UserCheck className="w-5 h-5 text-[#C5A059]" />
+            <UserCheck className="w-5 h-5 text-[#C5A059] shrink-0" />
             <h2 className="text-sm font-bold">تعديل البيانات الأساسية للمجند</h2>
           </div>
           <button
@@ -88,7 +88,7 @@ export function EditBasicInfoModal({
         </div>
 
         {/* Form Body */}
-        <form onSubmit={handleSubmit} className="flex-1 overflow-y-auto p-6 space-y-4">
+        <form onSubmit={handleSubmit} className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-4">
           {error && (
             <div className="p-3 bg-red-50 border border-red-200 rounded-lg text-xs font-semibold text-red-700 flex items-center gap-2">
               <AlertCircle className="w-4 h-4 shrink-0" />

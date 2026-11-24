@@ -182,30 +182,30 @@ export function RecordModal({
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#0F2042]/60 backdrop-blur-xs">
       <div className="bg-white w-full max-w-2xl max-h-[90vh] flex flex-col rounded-xl shadow-2xl border border-slate-200 overflow-hidden animate-in fade-in zoom-in-95 duration-150">
         {/* Modal Header */}
-        <div className="bg-[#0F2042] px-6 py-4 text-white flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-[#C5A059]">
-              <FileCheck className="w-5 h-5" />
+        <div className="bg-[#0F2042] px-4 py-3 sm:px-6 sm:py-4 text-white flex items-center justify-between">
+          <div className="flex items-center gap-2.5 sm:gap-3">
+            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-white/10 flex items-center justify-center text-[#C5A059] shrink-0">
+              <FileCheck className="w-4 h-4 sm:w-5 sm:h-5" />
             </div>
             <div>
-              <h2 className="text-base font-bold">
+              <h2 className="text-sm sm:text-base font-bold">
                 {isEditing ? "تعديل قيد بالسجل الطبي أو الإداري" : "إضافة قيد جديد بالسجل الطبي أو الإداري"}
               </h2>
-              <p className="text-xs text-slate-300">
+              <p className="text-[11px] sm:text-xs text-slate-300">
                 المجند: <strong className="text-white">{recruitName}</strong> • رقم الشرطة: <span className="font-mono text-[#C5A059]">{policeNumber}</span>
               </p>
             </div>
           </div>
           <button
             onClick={onClose}
-            className="w-8 h-8 rounded-lg text-slate-300 hover:text-white hover:bg-white/10 flex items-center justify-center transition-colors"
+            className="w-8 h-8 rounded-lg text-slate-300 hover:text-white hover:bg-white/10 flex items-center justify-center transition-colors shrink-0"
           >
             <X className="w-5 h-5" />
           </button>
         </div>
 
         {/* Modal Body */}
-        <form onSubmit={handleSubmit} className="flex-1 overflow-y-auto p-6 space-y-4">
+        <form onSubmit={handleSubmit} className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-4">
           {error && (
             <div className="p-3 bg-red-50 border border-red-200 rounded-lg flex items-center gap-2 text-red-700 text-xs font-semibold">
               <AlertCircle className="w-4 h-4 shrink-0" />

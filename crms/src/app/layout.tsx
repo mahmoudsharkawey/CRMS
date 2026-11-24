@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import "./globals.css";
 import { Header } from "@/components/layout/header";
 import { Sidebar } from "@/components/layout/sidebar";
+import { NavProvider } from "@/components/layout/nav-context";
 
 export const metadata: Metadata = {
   title: "إدارة شؤون المجندين - إدارة قوات أمن جنوب سيناء",
@@ -25,17 +26,19 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen bg-[#F8FAFC] text-[#0b1c30] antialiased">
-        <Header />
-        <Suspense fallback={null}>
-          <Sidebar />
-        </Suspense>
-        <div className="pr-64">
-          <main className="pt-16 min-h-screen px-6 py-8">
-            <Suspense fallback={null}>
-              {children}
-            </Suspense>
-          </main>
-        </div>
+        <NavProvider>
+          <Header />
+          <Suspense fallback={null}>
+            <Sidebar />
+          </Suspense>
+          <div className="pr-0 lg:pr-64 transition-all duration-300">
+            <main className="pt-16 min-h-screen px-3 sm:px-6 py-4 sm:py-8">
+              <Suspense fallback={null}>
+                {children}
+              </Suspense>
+            </main>
+          </div>
+        </NavProvider>
       </body>
     </html>
   );

@@ -32,18 +32,18 @@ export function PaperRecordModal({
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#0F2042]/75 backdrop-blur-xs">
       <div className="bg-white w-full max-w-5xl max-h-[94vh] flex flex-col rounded-xl shadow-2xl border border-slate-200 overflow-hidden animate-in fade-in zoom-in-95 duration-150">
         {/* Modal Header */}
-        <div className="bg-[#0F2042] px-6 py-4 text-white flex items-center justify-between no-print">
+        <div className="bg-[#0F2042] px-4 py-3 sm:px-6 sm:py-4 text-white flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 no-print">
           <div className="flex items-center gap-2.5">
-            <FileText className="w-5 h-5 text-[#C5A059]" />
+            <FileText className="w-5 h-5 text-[#C5A059] shrink-0" />
             <div>
-              <h2 className="text-base font-bold">معاينة السجل الورقي الممسوح ضوئياً</h2>
-              <p className="text-xs text-slate-300">
+              <h2 className="text-sm sm:text-base font-bold">معاينة السجل الورقي الممسوح ضوئياً</h2>
+              <p className="text-[11px] sm:text-xs text-slate-300">
                 المجند: <strong className="text-white">{recruitName}</strong> • رقم الشرطة: <span className="font-mono text-[#C5A059]">{policeNumber}</span>
               </p>
             </div>
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center justify-end gap-2">
             <div className="flex items-center bg-white/10 rounded-lg p-0.5">
               <button
                 onClick={() => setZoom((z) => Math.max(0.6, z - 0.2))}
@@ -64,7 +64,7 @@ export function PaperRecordModal({
 
             <button
               onClick={handlePrint}
-              className="inline-flex items-center gap-1.5 px-4 py-2 bg-[#C5A059] hover:bg-[#b08d47] text-[#0F2042] font-bold text-xs rounded-lg shadow-sm transition-all cursor-pointer"
+              className="inline-flex items-center justify-center gap-1.5 px-3 sm:px-4 py-1.5 sm:py-2 bg-[#C5A059] hover:bg-[#b08d47] text-[#0F2042] font-bold text-xs rounded-lg shadow-sm transition-all cursor-pointer flex-1 sm:flex-none"
             >
               <Printer className="w-4 h-4" />
               <span>طباعة السجل الورقي</span>
@@ -72,7 +72,7 @@ export function PaperRecordModal({
 
             <button
               onClick={onClose}
-              className="w-8 h-8 rounded-lg text-slate-300 hover:text-white hover:bg-white/10 flex items-center justify-center transition-colors"
+              className="w-8 h-8 rounded-lg text-slate-300 hover:text-white hover:bg-white/10 flex items-center justify-center transition-colors shrink-0"
             >
               <X className="w-5 h-5" />
             </button>

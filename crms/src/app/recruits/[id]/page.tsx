@@ -133,7 +133,7 @@ function RecruitProfileContent({ recruitId }: { recruitId: string }) {
   return (
     <div className="flex flex-col gap-6 w-full max-w-7xl mx-auto pb-12">
       {/* 1. Top Action and Navigation Bar */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2 border-b border-slate-200">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-2 border-b border-slate-200">
         <div className="flex items-center gap-2">
           <Link
             href="/"
@@ -147,12 +147,12 @@ function RecruitProfileContent({ recruitId }: { recruitId: string }) {
         </div>
 
         {/* Primary Printing Actions (EXACTLY the two required printing actions) */}
-        <div className="flex flex-wrap items-center gap-2.5">
+        <div className="grid grid-cols-2 sm:flex sm:items-center gap-2 w-full sm:w-auto">
           {/* Action 1: طباعة السجل الورقي */}
           <button
             type="button"
             onClick={() => setIsPaperRecordOpen(true)}
-            className="inline-flex items-center gap-1.5 px-4 py-2 bg-white border border-slate-300 hover:bg-slate-50 text-[#0F2042] text-xs font-bold rounded-lg shadow-xs transition-all cursor-pointer"
+            className="inline-flex items-center justify-center gap-1.5 px-3 sm:px-4 py-2 bg-white border border-slate-300 hover:bg-slate-50 text-[#0F2042] text-xs font-bold rounded-lg shadow-xs transition-all cursor-pointer"
           >
             <FileText className="w-4 h-4 text-[#1E3A8A]" />
             <span>طباعة السجل الورقي</span>
@@ -162,7 +162,7 @@ function RecruitProfileContent({ recruitId }: { recruitId: string }) {
           <button
             type="button"
             onClick={() => setIsLeaveReportOpen(true)}
-            className="inline-flex items-center gap-1.5 px-4 py-2 bg-[#C5A059] hover:bg-[#b08d47] text-[#0F2042] text-xs font-bold rounded-lg shadow-xs transition-all cursor-pointer"
+            className="inline-flex items-center justify-center gap-1.5 px-3 sm:px-4 py-2 bg-[#C5A059] hover:bg-[#b08d47] text-[#0F2042] text-xs font-bold rounded-lg shadow-xs transition-all cursor-pointer"
           >
             <Printer className="w-4 h-4" />
             <span>طباعة بيان الإجازات</span>
@@ -175,7 +175,7 @@ function RecruitProfileContent({ recruitId }: { recruitId: string }) {
               setRecordToEdit(null);
               setIsRecordModalOpen(true);
             }}
-            className="inline-flex items-center gap-1.5 px-4 py-2 bg-[#0F2042] hover:bg-[#1E3A8A] text-white text-xs font-bold rounded-lg shadow-sm transition-all cursor-pointer"
+            className="col-span-2 sm:col-span-1 inline-flex items-center justify-center gap-1.5 px-3 sm:px-4 py-2 bg-[#0F2042] hover:bg-[#1E3A8A] text-white text-xs font-bold rounded-lg shadow-sm transition-all cursor-pointer"
           >
             <PlusCircle className="w-4 h-4 text-[#C5A059]" />
             <span>إضافة قيد بالسجل</span>
@@ -184,11 +184,11 @@ function RecruitProfileContent({ recruitId }: { recruitId: string }) {
       </div>
 
       {/* 2. Conscript Profile Dossier Card (Basic Info & Administrative Status) */}
-      <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6">
-        <div className="flex flex-col lg:flex-row items-start gap-6">
+      <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-4 sm:p-6">
+        <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6">
           {/* Profile Photo */}
-          <div className="shrink-0 mx-auto lg:mx-0">
-            <div className="w-32 h-36 rounded-xl bg-slate-100 border-2 border-slate-200 overflow-hidden shadow-xs flex items-center justify-center p-0.5">
+          <div className="shrink-0 text-center">
+            <div className="w-28 h-32 sm:w-32 sm:h-36 rounded-xl bg-slate-100 border-2 border-slate-200 overflow-hidden shadow-xs flex items-center justify-center p-0.5">
               {recruit.photo ? (
                 <img
                   src={recruit.photo}
@@ -218,16 +218,16 @@ function RecruitProfileContent({ recruitId }: { recruitId: string }) {
                     قوات أمن جنوب سيناء
                   </span>
                 </div>
-                <h1 className="text-xl sm:text-2xl font-bold text-[#0F2042] tracking-tight">
+                <h1 className="text-lg sm:text-2xl font-bold text-[#0F2042] tracking-tight">
                   {recruit.fullName}
                 </h1>
               </div>
 
               {/* Administrative Status Widget */}
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 self-start sm:self-auto">
                 <div
                   className={cn(
-                    "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg border shadow-xs text-xs font-bold",
+                    "inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border shadow-xs text-xs font-bold",
                     statusBadge.bg
                   )}
                 >
@@ -247,7 +247,7 @@ function RecruitProfileContent({ recruitId }: { recruitId: string }) {
             </div>
 
             {/* Basic Information Grid (8 core data points) */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 py-4">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 py-4">
               <div>
                 <span className="block text-[11px] font-semibold text-slate-400">الرقم القومي</span>
                 <span className="text-xs font-mono font-bold text-slate-800 tracking-wider">
@@ -299,7 +299,7 @@ function RecruitProfileContent({ recruitId }: { recruitId: string }) {
             </div>
 
             {/* Footer with Edit Basic Info button */}
-            <div className="flex items-center justify-between pt-2 border-t border-slate-100">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 pt-2 border-t border-slate-100">
               <span className="text-[11px] text-slate-400">
                 آخر تحديث للسجل: {formatDate(recruit.updatedAt)}
               </span>
@@ -321,10 +321,10 @@ function RecruitProfileContent({ recruitId }: { recruitId: string }) {
         {/* Main Column: Medical and Administrative Timeline (8 cols) */}
         <div className="lg:col-span-8 flex flex-col gap-4">
           {/* Timeline Header & Filters */}
-          <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div className="bg-white p-3.5 sm:p-4 rounded-xl border border-slate-200 shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div className="flex items-center gap-2">
               <FileCheck2 className="w-5 h-5 text-[#1E3A8A]" />
-              <h2 className="text-sm font-bold text-[#0F2042]">
+              <h2 className="text-xs sm:text-sm font-bold text-[#0F2042]">
                 السجل الزمني الموحد (الطبي والإداري)
               </h2>
               <span className="px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 text-xs font-bold font-mono">
@@ -333,14 +333,14 @@ function RecruitProfileContent({ recruitId }: { recruitId: string }) {
             </div>
 
             {/* Quick Filter tabs */}
-            <div className="flex items-center gap-1 bg-slate-50 p-1 rounded-lg border border-slate-200">
+            <div className="flex items-center gap-1 bg-slate-50 p-1 rounded-lg border border-slate-200 overflow-x-auto scrollbar-none">
               {["الكل", "طبي", "إجازات", "انضباطي"].map((tab) => (
                 <button
                   key={tab}
                   type="button"
                   onClick={() => setTimelineFilter(tab)}
                   className={cn(
-                    "px-3 py-1 text-xs font-bold rounded-md transition-all cursor-pointer",
+                    "px-2.5 sm:px-3 py-1 text-xs font-bold rounded-md transition-all cursor-pointer shrink-0",
                     timelineFilter === tab
                       ? "bg-[#0F2042] text-white shadow-xs"
                       : "text-slate-600 hover:text-slate-900"
